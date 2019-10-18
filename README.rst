@@ -41,6 +41,7 @@ Dependencies
 
 Combinations known to work:
 
+* Matlab R2019a, GCC 7.4.0 (Ubuntu 18.04), OpenBLAS 0.3.7, MUMPS 5.2.1
 * Matlab R2019a, GCC 5.4.0 (Ubuntu 16.04), OpenBLAS 0.3.7, MUMPS 5.2.1
 
 

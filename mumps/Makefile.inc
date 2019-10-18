@@ -36,7 +36,7 @@ RM = /bin/rm -f
 CC = gcc -fPIC -fno-lto
 FC = gfortran -fPIC
 FL = gfortran -fPIC
-AR = ar vr
+AR = ar vr 
 RANLIB = ranlib
 
 LAPACK = -L$(topdir)/../../lib/ -lopenblas
