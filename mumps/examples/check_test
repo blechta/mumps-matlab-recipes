@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import numpy
+import fileinput
+
+for line in fileinput.input():
+    if line.lstrip().startswith('Solution is'):
+        line = line.replace('Solution is', '')
+        line = line.replace('(', '').replace(')', '').replace(',', ' ')
+        x = numpy.fromstring(line, sep=' ')
+        print('Solution is ', x)
+        try:
+            # D case
+            assert numpy.allclose(x, numpy.arange(1, 6)), "Solution should be 1 2 3 4 5"
+        except ValueError:
+            # Z case
+            assert numpy.allclose(x[0::2], numpy.arange(1, 6)), "Real part should be 1 2 3 4 5"
+            assert numpy.allclose(x[1::2], 0), "Imaginary part should be 0"
+        break
+else:
+    raise RuntimeError("Solution not returned by the executable")
