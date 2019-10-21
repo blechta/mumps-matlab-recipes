@@ -1,6 +1,7 @@
 # Begin orderings
-LSCOTCHDIR = $(topdir)/../..
-ISCOTCH   = -I/usr/include/scotch
+ISCOTCHDIR = $(topdir)/../../include
+LSCOTCHDIR = $(topdir)/../../lib
+ISCOTCH   = -I$(ISCOTCHDIR)
 LSCOTCH   = -L$(LSCOTCHDIR) -lesmumps -lscotch -lscotcherr
 
 LPORDDIR = $(topdir)/PORD/lib/
@@ -13,15 +14,15 @@ LMETIS    = -L$(LMETISDIR) -lmetis
 
 # Corresponding variables reused later
 #ORDERINGSF = -Dmetis -Dpord -Dscotch
-ORDERINGSF = -Dpord
+ORDERINGSF = -Dpord -Dscotch
 ORDERINGSC  = $(ORDERINGSF)
 
 #LORDERINGS = $(LMETIS) $(LPORD) $(LSCOTCH)
-LORDERINGS = $(LPORD)
+LORDERINGS = $(LPORD) $(LSCOTCH)
 #IORDERINGSF = $(ISCOTCH)
-IORDERINGSF =
+IORDERINGSF = $(ISCOTCH)
 #IORDERINGSC = $(IMETIS) $(IPORD) $(ISCOTCH)
-IORDERINGSC = $(IPORD)
+IORDERINGSC = $(IPORD) $(ISCOTCH)
 # End orderings
 ################################################################################
 
