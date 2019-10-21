@@ -8,7 +8,6 @@ TODO
 * Consider enabling OpenMP and/or threads in OpenBLAS
 * Consider enabling OpenMP in MUMPS build
 * Remove `-g`, add `-O2`, ...
-* Add METIS
 
 
 Quick install guide
@@ -18,6 +17,7 @@ Quick install guide
 
     ./make_openblas.sh
     ./make_scotch.sh
+    ./make_metis.sh
     ./make_mumps.sh
 
 Then use by::

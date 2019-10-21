@@ -8,21 +8,18 @@ LPORDDIR = $(topdir)/PORD/lib/
 IPORD    = -I$(topdir)/PORD/include/
 LPORD    = -L$(LPORDDIR) -lpord
 
-LMETISDIR = $(topdir)/../..
-IMETIS    = -I/usr/include/metis
+IMETISDIR = $(topdir)/../../include
+LMETISDIR = $(topdir)/../../lib
+IMETIS    = -I$(IMETISDIR)
 LMETIS    = -L$(LMETISDIR) -lmetis
 
 # Corresponding variables reused later
-#ORDERINGSF = -Dmetis -Dpord -Dscotch
-ORDERINGSF = -Dpord -Dscotch
+ORDERINGSF = -Dmetis -Dpord -Dscotch
 ORDERINGSC  = $(ORDERINGSF)
 
-#LORDERINGS = $(LMETIS) $(LPORD) $(LSCOTCH)
-LORDERINGS = $(LPORD) $(LSCOTCH)
-#IORDERINGSF = $(ISCOTCH)
+LORDERINGS = $(LMETIS) $(LPORD) $(LSCOTCH)
 IORDERINGSF = $(ISCOTCH)
-#IORDERINGSC = $(IMETIS) $(IPORD) $(ISCOTCH)
-IORDERINGSC = $(IPORD) $(ISCOTCH)
+IORDERINGSC = $(IMETIS) $(IPORD) $(ISCOTCH)
 # End orderings
 ################################################################################
 
