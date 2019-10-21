@@ -28,10 +28,7 @@ LIBEXT  = .a
 OUTC    = -o
 OUTF    = -o
 RM = /bin/rm -f
-#CC = gcc -fPIC -fno-lto  -static-libgfortran -static-libgcc
-#FC = gfortran -fPIC  -static-libgfortran -static-libgcc
-#FL = gfortran -fPIC  -static-libgfortran -static-libgcc
-CC = gcc -fPIC -fno-lto
+CC = gcc -fPIC
 FC = gfortran -fPIC
 FL = gfortran -fPIC
 AR = ar vr 
@@ -49,12 +46,12 @@ LIBOTHERS = -lpthread
 CDEFS   = -DAdd_
 
 #Begin Optimized options
-#OPTF    = -O -fopenmp
-#OPTL    = -O -fopenmp
-#OPTC    = -O -fopenmp
-OPTF    = -O0 -g
-OPTL    = -O0 -g
-OPTC    = -O0 -g
+#OPTF    = -O3 -fopenmp
+#OPTL    = -O3 -fopenmp
+#OPTC    = -O3 -fopenmp
+OPTF    = -O3
+OPTL    = -O3
+OPTC    = -O3
 #End Optimized options
 
 INCS = $(INCSEQ)

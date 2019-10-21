@@ -4,14 +4,14 @@ INCMUMPS = -I$(MUMPS_DIR)/include
 LIBMUMPS = -L$(MUMPS_DIR)/lib -l$(ARITH)mumps -lmumps_common -L$(MUMPS_DIR)/libseq -lmpiseq -lpord
 LIBFORT = -lgfortran
 LIBBLAS = -L$(MUMPS_DIR)/../../lib -lopenblas
-LIBSCOTCH = -L$(MUMPS_DIR)/../../lib  -lesmumps -lscotch -lscotcherr
-LIBMETIS = -L$(MUMPS_DIR)/../../lib  -lmetis
+LIBSCOTCH = -L$(MUMPS_DIR)/../../lib -lesmumps -lscotch -lscotcherr
+LIBMETIS = -L$(MUMPS_DIR)/../../lib -lmetis
 
 INC = $(INCMUMPS)
 LIB = $(LIBMUMPS) $(LIBFORT) $(LIBBLAS) $(LIBSCOTCH) $(LIBMETIS)
 
-MEX = mex -g -largeArrayDims
-OPTC =
+MEX = mex -largeArrayDims
+OPTC = -O
 
 all:	d z
 

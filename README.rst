@@ -7,7 +7,6 @@ TODO
 
 * Consider enabling OpenMP and/or threads in OpenBLAS
 * Consider enabling OpenMP in MUMPS build
-* Remove `-g`, add `-O2`, ...
 
 
 Quick install guide
