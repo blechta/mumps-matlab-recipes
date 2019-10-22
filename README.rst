@@ -5,8 +5,9 @@ Recipe to build MUMPS for Matlab from source
 TODO
 ====
 
-* Consider enabling OpenMP and/or threads in OpenBLAS
-* Consider enabling OpenMP in MUMPS build
+* Add performance tests
+* Add threading/OpenMP tests (including MUMPS's BLR)
+* Write OO wrapper for MUMPS (with automatic lifetime management)
 
 
 Quick install guide

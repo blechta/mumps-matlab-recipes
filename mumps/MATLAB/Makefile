@@ -11,7 +11,7 @@ INC = $(INCMUMPS)
 LIB = $(LIBMUMPS) $(LIBFORT) $(LIBBLAS) $(LIBSCOTCH) $(LIBMETIS)
 
 MEX = mex -largeArrayDims
-OPTC = -O
+OPTC = -O CFLAGS='$$CFLAGS -fopenmp' LDFLAGS='$$LDFLAGS -fopenmp'
 
 all:	d z
 
