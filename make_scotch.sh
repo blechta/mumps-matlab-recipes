@@ -2,7 +2,7 @@
 set -e
 
 # Default values
-: ${SCOTCH_VERSION:=6.0.8}
+: ${SCOTCH_VERSION:=6.0.9}
 : ${PREFIX:="${PWD}"}
 : ${PROCS:=1}
 

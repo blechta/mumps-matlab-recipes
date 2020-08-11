@@ -2,7 +2,7 @@
 set -e
 
 # Default values
-: ${OPENBLAS_VERSION:=0.3.7}
+: ${OPENBLAS_VERSION:=0.3.10}
 : ${PREFIX:="${PWD}"}
 
 # Download and unpack
@@ -12,9 +12,7 @@ tar -xzf OpenBLAS-${OPENBLAS_VERSION}.tar.gz
 cd OpenBLAS-${OPENBLAS_VERSION}
 
 # Build
-# NO_LAPACKE=1 NO_CBLAS=1 are broken in 0.3.7: https://github.com/xianyi/OpenBLAS/issues/2215
-#make INTERFACE64=0 NO_LAPACKE=1 NO_CBLAS=1 NO_SHARED=1 USE_OPENMP=1 NUM_PARALLEL=$(nproc)
-make INTERFACE64=0 NO_SHARED=1 USE_OPENMP=1 NUM_PARALLEL=$(nproc)
+make INTERFACE64=0 NO_LAPACKE=1 NO_CBLAS=1 NO_SHARED=1 USE_OPENMP=1 NUM_PARALLEL=$(nproc)
 
 # Install
 mkdir -p "${PREFIX}/lib"

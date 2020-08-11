@@ -44,6 +44,7 @@ Combinations known to work:
 
 * Matlab R2019a, GCC 7.4.0 (Ubuntu 18.04), OpenBLAS 0.3.7, MUMPS 5.2.1
 * Matlab R2019a, GCC 5.4.0 (Ubuntu 16.04), OpenBLAS 0.3.7, MUMPS 5.2.1
+* Matlab R2020a, GCC 9.3.0 (Ubuntu 20.04), OpenBLAS 0.3.10, MUMPS 5.3.3
 
 
 Testing

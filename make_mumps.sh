@@ -2,7 +2,7 @@
 set -e
 
 # Default values
-: ${MUMPS_VERSION:=5.2.1}
+: ${MUMPS_VERSION:=5.3.3}
 : ${PREFIX:="${PWD}"}
 : ${PROCS:=1}
 
