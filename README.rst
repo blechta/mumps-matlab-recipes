@@ -34,7 +34,7 @@ Then use by::
 Usage of Matlab/MUMPS
 =====================
 
-See http://mumps.enseeiht.fr/doc/userguide_5.2.1.pdf#section.10.
+See `MUMPS User Guide, section 10 <https://web.archive.org/web/20200926104305id_/mumps.enseeiht.fr/doc/userguide_5.3.3.pdf#section.10>`_.
 
 
 Dependencies

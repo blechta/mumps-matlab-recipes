@@ -8,7 +8,7 @@ set -e
 
 # Download and unpack
 mkdir -p src && cd src
-wget -c -O MUMPS_${MUMPS_VERSION}.tar.gz http://mumps.enseeiht.fr/MUMPS_${MUMPS_VERSION}.tar.gz
+wget -c -O MUMPS_${MUMPS_VERSION}.tar.gz https://graal.ens-lyon.fr/MUMPS/MUMPS_${MUMPS_VERSION}.tar.gz
 tar -xzf MUMPS_${MUMPS_VERSION}.tar.gz
 cd MUMPS_${MUMPS_VERSION}
 
